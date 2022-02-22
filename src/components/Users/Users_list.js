@@ -4,7 +4,7 @@ import classes from "./UserList.module.css";
 
 const UserList=(props)=>{
     return(
-        <Card className={classes.users}>
+        <Card classes={classes.users}>
             <ul>
                 {props.users.map((user)=>(
                     <li>
