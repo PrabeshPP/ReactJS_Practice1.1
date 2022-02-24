@@ -7,7 +7,8 @@ import classes from "./errormodal.module.css";
 
 const  ErrorModal=(props)=>{
     return(
-        <div>
+        //! Using the React.Fragment
+        <React.Fragment>
         <div className={classes.backdrop} onClick={props.onConfirm}></div>
             <Card classes={classes.modal}>
         <header className={classes.header}>
@@ -24,7 +25,7 @@ const  ErrorModal=(props)=>{
         </footer>
 
         </Card>
-        </div>
+        </React.Fragment>
         
 
     );
