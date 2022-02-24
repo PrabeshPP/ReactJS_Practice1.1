@@ -43,7 +43,9 @@ function AddUser(props){
     }
 
     return(
-        <div>
+        //! Using React.Fragment will remove the un-necessary use of div element.
+        //! Using React.Fragment will render as a an empty element.
+        <React.Fragment>
         {error &&  <ErrorModal title={error.title} message={error.message} onConfirm={errorHandler}/>}
     
             <Card classes={classes.input}>
@@ -58,7 +60,7 @@ function AddUser(props){
           <Button type="submit">Add User</Button>
         </form>
         </Card>
-        </div>
+        </React.Fragment>
        
     );
 }
