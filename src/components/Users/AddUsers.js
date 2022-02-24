@@ -5,7 +5,7 @@ import Button from "../UI/Button";
 import ErrorModal from "../UI/errormodal";
 
 //useState should be used when we need to change the value of that variable
-//useRef
+//useRef should be used when we just need an access to the certain value
 
 function AddUser(props){
 
