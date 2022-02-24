@@ -30,6 +30,8 @@ function AddUser(props){
             return;
         }
         props.onAddUser(enteredName,enteredUserAge);
+
+        //! it is not a good way to 
         inputUserName.current.value='';
         inputUserAge.current.value='';
         
