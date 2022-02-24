@@ -30,6 +30,8 @@ function AddUser(props){
             return;
         }
         props.onAddUser(enteredName,enteredUserAge);
+        inputUserName.current.value='';
+        inputUserAge.current.value='';
         
     };
 
