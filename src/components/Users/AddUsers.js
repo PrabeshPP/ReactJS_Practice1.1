@@ -31,7 +31,7 @@ function AddUser(props){
         }
         props.onAddUser(enteredName,enteredUserAge);
 
-        //! it is not a good way to 
+        //! it is not a good way to  re-assign value in react js
         inputUserName.current.value='';
         inputUserAge.current.value='';
         
